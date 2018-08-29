@@ -39,7 +39,11 @@ Alternatively, you can turn on automatic download with the fetchUKImpact(auto=TR
 * SearchTerms.csv - search terms to be used to investigate their contribution to research impact.  The default list is "data", "infrastructure", "model", "software" and "tool".  You can replace this list with any list of interest to you.
 
 ## Methodology
-For a description of the methodology, please see my [presentation](https://doi.org/10.6084/m9.figshare.6459407.v1) at INORMS Edinburgh 2018.
+For a description of the methodology, please see my [presentation](https://doi.org/10.6084/m9.figshare.6459407.v1) at INORMS Edinburgh 2018.  The overall concept is depicted below:
+
+![FittedModel](/images/fittedmodel.png)
+
+
 
 
 
