@@ -25,7 +25,7 @@ By default, refimpact.R assumes that the user has manually downloaded the entire
 - Save CaseStudies.xlsx as a tab delimited text file with the name “ImpactOnly.csv”
 - Put ImpactOnly.csv in refimpact/inputs
 
-You can turn on automatic download with the call fetchUKImpact(auto=TRUE).  But by default the function will only download the first five impact cases, but you can set the value using "k=...".
+You can turn on automatic download with the call fetchUKImpact(auto=TRUE).  But by default the function will only download the first five impact cases, you can set the value using "k=...".
 
 ## Included Input Files
 ### ukrefimpact/inputs
