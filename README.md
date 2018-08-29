@@ -28,9 +28,9 @@ By default, refimpact.R assumes that the user has manually downloaded the entire
 ### Included Input Files
 
 * ukrefimpact/inputs/0-GPA.csv - GPA is calculated based on Paul Ginsparg's suggestion in Nature 518, 150–151 (12 February 2015) doi:10.1038/518150a using UK REF assessment result http://results.ref.ac.uk/DownloadFile/AllResults/xlsx
-* ukrefimpact/inputs/CaseStudyID.csv - 
-* ukrefimpact/inputs/impactid-ukprn.csv
-* ukrefimpact/inputs/UoA.csv
+* ukrefimpact/inputs/CaseStudyID.csv - the IDs of all 6638 case studies from http://impact.ref.ac.uk/CaseStudies/ 
+* ukrefimpact/inputs/impactid-ukprn.csv - mapping table of IDs of case studies and UKPRN (A UKPRN is a unique number allocated to a provider on successful registration on the UKRLP.  This is an 8 digit number starting with 1, e.g. 10000346, 10010014).
+* ukrefimpact/inputs/UoA.csv - Unit of Assessment, code and text description
 
 
 
