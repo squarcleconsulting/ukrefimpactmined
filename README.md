@@ -1,5 +1,5 @@
 # ukrefimpactmined
-R scripts for text mining UK Impact Case Studies
+R scripts for text mining UK Impact Case Studies.  This is the R code for the project at https://osf.io/cnrgu/?view_only=7850d79c32d3411a81198ff173f7bfa1.  This project is partially funded by the Australian Research Data Commons (https://ardc.edu.au/).
 
 Copyright (c) 2018 Paul Wong
 
