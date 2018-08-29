@@ -27,8 +27,8 @@ By default, refimpact.R assumes that the user has manually downloaded the entire
 
 ### Included Input Files
 
-* ukrefimpact/inputs/0-GPA.csv
-* ukrefimpact/inputs/CaseStudyID.csv
+* ukrefimpact/inputs/0-GPA.csv - GPA is calculated based on Paul Ginsparg's suggestion in Nature 518, 150–151 (12 February 2015) doi:10.1038/518150a using UK REF assessment result http://results.ref.ac.uk/DownloadFile/AllResults/xlsx
+* ukrefimpact/inputs/CaseStudyID.csv - 
 * ukrefimpact/inputs/impactid-ukprn.csv
 * ukrefimpact/inputs/UoA.csv
 
