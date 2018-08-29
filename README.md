@@ -31,14 +31,15 @@ You can turn on automatic download with the call fetchUKImpact(auto=TRUE).  But 
 #### ukrefimpact/inputs
 * 0-GPA.csv - GPA is calculated based on [Paul Ginsparg's](https://en.wikipedia.org/wiki/Paul_Ginsparg) suggestion in [Nature 518, 150–151 (12 February 2015)](https://dx.doi.org/10.1038/518150a) using [UK REF assessment result](http://results.ref.ac.uk/DownloadFile/AllResults/xlsx)
 * CaseStudyID.csv - the IDs of all 6638 case studies from [UK Impact Case Studies](http://impact.ref.ac.uk/CaseStudies/Terms.aspx)
-* impactid-ukprn.csv - mapping table of IDs of case studies and UKPRN (A UKPRN is a unique number allocated to a provider on successful registration on the UKRLP.  This is an 8 digit number starting with 1, e.g. 10000346, 10010014).
+* impactid-ukprn.csv - mapping table of case studies IDs and UKPRN (a UKPRN is a unique number allocated to a provider on successful registration on the UKRLP.  This is an 8 digit number starting with 1, e.g. 10000346, 10010014).
 * UoA.csv - Unit of Assessment, code and text description
 
 #### stmBase-nostem/inputs
 * hifreq.csv - high frequency terms to be removed.
 * SearchTerms.csv - search terms to be used to investigate their contribution to research impact.  The default list is "data", "infrastructure", "model", "software" and "tool".  You can replace this list with any list of interest to you.
 
-
+### Methodology
+For a description of the methodology, please see my [presentation](https://doi.org/10.6084/m9.figshare.6459407.v1) at INORMS Edinburgh 2018.
 
 
 
