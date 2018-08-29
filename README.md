@@ -8,9 +8,9 @@ This file is licenced under [CC-BY 4.0 International](https://creativecommons.or
 ---------------------------------------------------
 # Usage
 
-These codes were tested on OSX 10.13.6 and Ubuntu 16.04.5 LTS.  They had not been tested on Windoze machine but you may be able to run them with cygwin installed.
+These codes were tested on OSX 10.13.6 and Ubuntu 16.04.5 LTS.  They had not been tested on Windoze machine but you may be able to run them with cygwin installed.  
 
-master.sh is the master shell script for running sequentially, (1) refimpact/refimpact.R, (2) stmBase-nostem/stmBase-nostem.R, and (3) stmManyTop/stmManyTop.R.  Because of licencing restriction on the use of the [UK Impact Case Studies](http://impact.ref.ac.uk/CaseStudies/Terms.aspx), we cannot redistribute these case studies.  Bewarned that (3) will take approximately 5 days to complete.  Also note that there are dependencies on (1), (2) and (3).
+master.sh is the master shell script for running (1) refimpact/refimpact.R, (2) stmBase-nostem/stmBase-nostem.R, and (3) stmManyTop/stmManyTop.R sequentially.  Because of licencing restriction on the [UK Impact Case Studies](http://impact.ref.ac.uk/CaseStudies/Terms.aspx), we cannot redistribute these case studies.  Bewarned that (3) will take approximately 5 days to complete.  Also note that there are dependencies on (1), (2) and (3).
 
 ### Download the Whole Collection
 By default, refimpact.R assumes that the user has manually downloaded the entire collection and saved the file in ukrefimpact/inputs/ImpactOnly.csv.  Do the following to download the collection:
@@ -24,6 +24,8 @@ By default, refimpact.R assumes that the user has manually downloaded the entire
 - Remove column “Institution” and “Title”
 - Save CaseStudies.xlsx as a tab delimited text file with the name “ImpactOnly.csv”
 - Put ImpactOnly.csv in refimpact/inputs
+
+You can turn on automatic download with the call fetchUKImpact(auto=TURE).  But by default the function will only download the first five impact cases.
 
 ### Included Input Files
 #### ukrefimpact/inputs
