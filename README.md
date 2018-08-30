@@ -8,9 +8,50 @@ This file is licenced under [CC-BY 4.0 International](https://creativecommons.or
 ---------------------------------------------------
 ## Usage
 
-These codes were tested on a 12 core Mac Pro running OSX 10.13.6, and in the [Nectar Cloud](https://nectar.org.au/) under Ubuntu 16.04.5 LTS.  The R version tested was 3.5.  They had not been tested on Windoze machines but you may be able to run them with cygwin installed.  
+These codes were tested on a 12 core Mac Pro running OSX 10.13.6, and in the [Nectar Cloud](https://nectar.org.au/) under Ubuntu 16.04.5 LTS.  The R version tested was 3.4.4  They had not been tested on Windoze machines but you may be able to run them with cygwin installed.  
 
-master.sh is the master shell script for running (1) refimpact/refimpact.R, (2) stmBase-nostem/stmBase-nostem.R, and (3) stmManyTop/stmManyTop.R sequentially.  Because of [licencing restriction on the UK Impact Case Studies](http://impact.ref.ac.uk/CaseStudies/Terms.aspx), we cannot redistribute the underlying case studies.  Also bewarned that (3) will take approximately 5 days to complete (I'll look into optimise the code in next iteration).  Also note that there are dependencies on (1), (2) and (3) - (3) depends on (2) depends on (1).
+master.sh is the master shell script for running (1) refimpact/refimpact.R, (2) stmBase-nostem/stmBase-nostem.R, and (3) stmManyTop/stmManyTop.R sequentially.  Because of [licencing restriction on the UK Impact Case Studies](http://impact.ref.ac.uk/CaseStudies/Terms.aspx), we cannot redistribute the underlying case studies.  Also bewarned that (3) will take approximately 5 days to complete (I'll look into optimise the code in next iteration).  Also note that there are dependencies on (1), (2) and (3) - (3) depends on outputs from (2), and (2) depends on outputs from (1).  Nevertheless, you can run ./ukrefimpact.R 
+
+## Output Files
+
+Successful execution of master.sh should see the following outputs
+
+### ukrefimpact/outputs/
+* refimpact.RData
+
+### stmBase-nostem/outputs/
+* docsTidyTermCount.csv
+* rankTerms.csv
+* stmBase-nostem.RData
+
+### stmManyTop/outputs/
+* id_documents_topics_top5.csv
+* id_topic_top15.csv
+* stmManyTop50-80-tmp.RData
+* stmManyTop50-80.RData
+
+### stmManyTop/plots/
+* SummaryMT50.pdf
+* SummaryMT55.pdf
+* SummaryMT60.pdf
+* SummaryMT65.pdf
+* SummaryMT70.pdf
+* SummaryMT75.pdf
+* SummaryMT80.pdf
+* TC010550fr.pdf
+* TC010555fr.pdf
+* TC010560fr.pdf
+* TC010565fr.pdf
+* TC010570fr.pdf
+* TC010575fr.pdf
+* TC010580fr.pdf
+* TCCD010550fr.pdf
+* TCCD010555fr.pdf
+* TCCD010560fr.pdf
+* TCCD010565fr.pdf
+* TCCD010570fr.pdf
+* TCCD010575fr.pdf
+* TCCD010580fr.pdf
 
 ## Download the Whole Collection
 By default, refimpact.R assumes that the user has manually downloaded the entire collection and saved the file in ukrefimpact/inputs/ImpactOnly.csv.  Follow the instruction below to download the whole collection:
