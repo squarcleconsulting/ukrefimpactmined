@@ -42,7 +42,7 @@ Alternatively, you can turn on automatic download with the fetchUKImpact(auto=TR
 For a description of the methodology, please see my [presentation](https://doi.org/10.6084/m9.figshare.6459407.v1) at INORMS Edinburgh 2018.  The overall concept is depicted below:
 ![fittedmodel](/images/fittedmodel.png)
 
-The information retrieval component is pretty straightforward using standard vect space model and term weighted ranking (e.g. TFIDF).  The machine learning component is topic modelling using [stm package](https://cran.r-project.org/web/packages/stm/index.html) (specifically Coorelated Topic Model, CTM).  We have also experimented with the standard LDA approach.  We have not done any deep comparison between CTM and LDA.  It would be useful to do a more in depth study comparing LDA, CTM, STM and NMF.  The use of CTM does provide a way for us to coorelate the topics generated as well as applying network analytical techniques over the coorelated networks.
+The information retrieval component is pretty straightforward using standard vect space model and term weighted ranking (e.g. TFIDF).  The machine learning component is topic modelling using [stm package](https://cran.r-project.org/web/packages/stm/index.html) (specifically Corelated Topic Model, CTM).  We have also experimented with the standard LDA approach.  We have not done any deep comparison between CTM and LDA.  It would be useful to do a more in depth study comparing LDA, CTM, STM and NMF.  The use of CTM does provide a way for us to look at the corelation of topics generated as well as applying network analytical techniques over the corelated topic networks.
 
 ![corelatedtopics](/images/corelatedtopics.png)
 ![communitydetection](/images/communitydetection.png)
