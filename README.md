@@ -31,7 +31,7 @@ Successful execution of master.sh should see the following outputs
 * stmManyTop50-80.RData
 
 ### stmManyTop/plots/
-* SummaryMT50.pdf
+* SummaryMT\*\*.pdf
 * SummaryMT55.pdf
 * SummaryMT60.pdf
 * SummaryMT65.pdf
