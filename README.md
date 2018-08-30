@@ -10,12 +10,12 @@ This file is licenced under [CC-BY 4.0 International](https://creativecommons.or
 
 These codes were tested on a 12 core Mac Pro running OSX 10.13.6, and in the [Nectar Cloud](https://nectar.org.au/) under Ubuntu 16.04.5 LTS.  The R version tested was 3.5.  They had not been tested on Windoze machines but you may be able to run them with cygwin installed.  
 
-master.sh is the master shell script for running (1) refimpact/refimpact.R, (2) stmBase-nostem/stmBase-nostem.R, and (3) stmManyTop/stmManyTop.R sequentially.  Because of licencing restriction on the [UK Impact Case Studies](http://impact.ref.ac.uk/CaseStudies/Terms.aspx), we cannot redistribute the underlying case studies.  Also bewarned that (3) will take approximately 5 days to complete (I'll look into optimise the code in next iteration).  Also note that there are dependencies on (1), (2) and (3) - (3) depends on (2) depends on (1).
+master.sh is the master shell script for running (1) refimpact/refimpact.R, (2) stmBase-nostem/stmBase-nostem.R, and (3) stmManyTop/stmManyTop.R sequentially.  Because of [licencing restriction on the UK Impact Case Studies](http://impact.ref.ac.uk/CaseStudies/Terms.aspx), we cannot redistribute the underlying case studies.  Also bewarned that (3) will take approximately 5 days to complete (I'll look into optimise the code in next iteration).  Also note that there are dependencies on (1), (2) and (3) - (3) depends on (2) depends on (1).
 
 ## Download the Whole Collection
 By default, refimpact.R assumes that the user has manually downloaded the entire collection and saved the file in ukrefimpact/inputs/ImpactOnly.csv.  Follow the instruction below to download the whole collection:
 
-- Go to [UK Impact Case Studies](http://impact.ref.ac.uk/CaseStudies/Terms.aspx) and click “See all case studies”
+- Go to [UK Impact Case Studies](http://impact.ref.ac.uk/CaseStudies/Search1.aspx) and click “See all case studies”
 - Scroll down and click “None selected”
 - Check “Details of impact” and proceed to click “download”
 - When download is completed, open CaseStudies.xlsx in Excel
