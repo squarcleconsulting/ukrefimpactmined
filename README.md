@@ -20,7 +20,7 @@ By default, refimpact.R assumes that the user has manually downloaded the entire
 - Check “Details of impact” and proceed to click “download”
 - When download is completed, open CaseStudies.xlsx in Excel
 - Rename columns: “Case Study Id” with “ID”, “Unit of Assessment” with “FoR” and “Details of the impact” with “impact”
-- Use TRIM(CLEAN(SUBSTITUTE(cell, CHAR(160), “ “))) in Excel to remove all non-printable characters (including line breaks) and extra white spaces in “impact” column 
+- Use `TRIM(CLEAN(SUBSTITUTE(cell, CHAR(160), “ “)))` in Excel to remove all non-printable characters (including line breaks) and extra white spaces in “impact” column 
 - Remove column “Institution” and “Title”
 - Save CaseStudies.xlsx as a tab delimited text file with the name “ImpactOnly.csv”
 - Put ImpactOnly.csv in refimpact/inputs
