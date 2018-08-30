@@ -8,7 +8,7 @@ This file is licenced under [CC-BY 4.0 International](https://creativecommons.or
 ---------------------------------------------------
 ## Usage
 
-These codes were tested on OSX 10.13.6, Ubuntu 16.04.5 LTS (in the [Nectar Cloud](https://nectar.org.au/)), and R under version 3.5.  They had not been tested on Windoze machines but you may be able to run them with cygwin installed.  
+These codes were tested on 12 cores 2010 Mac Pro running OSX 10.13.6, in the [Nectar Cloud](https://nectar.org.au/)) under Ubuntu 16.04.5 LTS.  The R version is 3.5.  They had not been tested on Windoze machines but you may be able to run them with cygwin installed.  
 
 master.sh is the master shell script for running (1) refimpact/refimpact.R, (2) stmBase-nostem/stmBase-nostem.R, and (3) stmManyTop/stmManyTop.R sequentially.  Because of licencing restriction on the [UK Impact Case Studies](http://impact.ref.ac.uk/CaseStudies/Terms.aspx), we cannot redistribute the underlying case studies.  Also bewarned that (3) will take approximately 5 days to complete (I'll look into optimise the code in next iteration).  Also note that there are dependencies on (1), (2) and (3) - (3) depends on (2) depends on (1).
 
@@ -39,12 +39,12 @@ Alternatively, you can turn on automatic download with the fetchUKImpact(auto=TR
 * SearchTerms.csv - search terms to be used to investigate their contribution to research impact.  The default list is "data", "infrastructure", "model", "software" and "tool".  You can replace this list with any list of interest to you.
 
 ## Methodology
-For a description of the methodology, please see my [presentation](https://doi.org/10.6084/m9.figshare.6459407.v1) at INORMS Edinburgh 2018.  The overall concept is depicted below:
+For a description of the methodology, please see my [presentation](https://doi.org/10.6084/m9.figshare.6459407.v1) at INORMS Edinburgh 2018.  The overall concept is depicted below, but in short we are trying to understand the contribution of research data in generating *research impact* (social, economic, cultural, environmental etc benefits).
 ![fittedmodel](/images/fittedmodel.png)
 
-The information retrieval component is straightforward using standard vector space model and term weighted ranking (e.g. TFIDF).  We have only used unigram (bag of words) in our approach and it would be interesting to extend the work with n-grams.  The machine learning component is topic modelling using [stm package](https://cran.r-project.org/web/packages/stm/index.html) (specifically Corelated Topic Model, CTM).  We have also experimented with the standard LDA approach.  We have not done any deep comparison between CTM and LDA.  It would be useful to do a more in depth study comparing LDA, CTM, STM and NMF.  We feel that reproducibility is an important consideration, hence it is important for us to use packages that can specify the random seed.  
+The information retrieval component is straightforward using the standard vector space model and term weighted ranking (e.g. TFIDF).  We have only used unigram (bag of words) in our approach and it would be interesting to extend the work with n-grams.  The (unsupervised) machine learning component is topic modelling using [stm package](http://www.structuraltopicmodel.com/) (specifically Corelated Topic Model, CTM).  We have also experimented with the standard LDA approach.  We have not done any deep comparison between CTM and LDA.  But very superficial examination of the topics generated from CTM and LDA looked very similar.  Indeed, it would be useful to do a more in depth study comparing LDA, CTM, STM and NMF.  We feel that reproducibility is an important consideration, hence it is important for us to use packages that can specify the random seed.  
 
-The use of CTM does provide a way for us to look at the corelation of topics generated as well as applying network analytical techniques over the corelated topic networks.
+The use of CTM does provide a way to look at the *corelation of topics* generated as well as applying network analytical techniques over the corelated topic networks.
 
 ![corelatedtopics](/images/corelatedtopics.png)
 ![communitydetection](/images/communitydetection.png)
