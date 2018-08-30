@@ -51,7 +51,7 @@ The use of CTM does provide a way to look at the *corelation of topics* generate
 
 ## Acknowlegement
 
-Julia Silge and David Robinson's book [Text Mining with R](https://www.tidytextmining.com/) has been fantastic.  STM package authors, Molly Roberts, Brandon Stewart and Dustin Tingley are also awesome.
+Julia Silge and David Robinson's book [*Text Mining with R*](https://www.tidytextmining.com/) has been fantastic.  STM package authors, Molly Roberts, Brandon Stewart and Dustin Tingley are also awesome.
 
 
 
