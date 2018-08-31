@@ -10,11 +10,11 @@ This file is licenced under [CC-BY 4.0 International](https://creativecommons.or
 
 These codes were tested on a 12 core Mac Pro running OSX 10.13.6, and in the [Nectar Cloud](https://nectar.org.au/) under Ubuntu 16.04.5 LTS.  The R version tested was 3.4.4  They had not been tested on Windoze machines but you may be able to run them with cygwin installed.  
 
-master.sh is the master shell script for running (1) refimpact/refimpact.R, (2) stmBase-nostem/stmBase-nostem.R, and (3) stmManyTop/stmManyTop.R sequentially.  Because of [licencing restriction on the UK Impact Case Studies](http://impact.ref.ac.uk/CaseStudies/Terms.aspx), we cannot redistribute the underlying case studies.  Also bewarned that (3) will take approximately 5 days to complete (I'll look into optimise the code in next iteration).  Also note that there are dependencies on (1), (2) and (3) - (3) depends on outputs from (2), and (2) depends on outputs from (1).  Nevertheless, you can run `./ukrefimpact.R`. 
+master.sh is the master shell script for running (1) refimpact/refimpact.R, (2) stmBase-nostem/stmBase-nostem.R, and (3) stmManyTop/stmManyTop.R sequentially.  Because of [licencing restriction on the UK Impact Case Studies](http://impact.ref.ac.uk/CaseStudies/Terms.aspx), we cannot redistribute the underlying case studies.  Also bewarned that (3) will take approximately 5 days to complete (I'll look into optimise the code in next iteration).  Also note that there are dependencies on (1), (2) and (3) - (3) depends on outputs from (2), and (2) depends on outputs from (1).  Nevertheless, you can run `./ukrefimpact.R` independently of master.sh. 
 
 ## Output Files
 
-Successful execution of master.sh should see the following outputs (I would recommend logging the run by using the usual `./master.sh > masterlog.txt`):
+Successful execution of master.sh should see the outputs below. I would also recommend logging the run with the usual `./master.sh > masterlog.txt`.
 
 ### ukrefimpact/outputs/
 * refimpact.RData
@@ -74,16 +74,4 @@ The use of CTM does provide a way to look at the *corelation of topics* generate
 
 ## Acknowlegement
 
-Julia Silge and David Robinson's book [*Text Mining with R*](https://www.tidytextmining.com/) has been fantastic.  STM package authors, Molly Roberts, Brandon Stewart and Dustin Tingley are also awesome.
-
-
-
-
-
-
-
-
-
-
-
-
+Julia Silge and David Robinson's book [*Text Mining with R*](https://www.tidytextmining.com/) has been fantastic.  STM package authors, Molly Roberts, Brandon Stewart and Dustin Tingley are also awesome.  *Big Data and Social Science: A Practical Guide to Methods and Tools* ed by Foster *et al* (2017) is also a good source.
