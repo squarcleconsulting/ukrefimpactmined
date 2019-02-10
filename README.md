@@ -67,7 +67,7 @@ For a description of the methodology, please see my [presentation](https://doi.o
 
 The information retrieval component is straightforward using the standard vector space model and term weighted ranking (e.g. TFIDF).  We have only used unigram (bag of words) in our approach and it would be interesting to extend the work with n-grams.  The (unsupervised) machine learning component is topic modelling using [stm package](http://www.structuraltopicmodel.com/) (specifically Corelated Topic Model, CTM).  We have also experimented with the standard LDA approach.  We have not done any deep comparison between CTM and LDA.  But very superficial examination of the topics generated from CTM and LDA looked very similar.  Indeed, it would be useful to do a more in depth study comparing LDA, CTM, STM and NMF.  We feel that reproducibility is an important consideration, hence it is important for us to use packages that can specify the random seed.  
 
-The use of CTM does provide a way to look at the *corelation of topics* generated as well as applying network analytical techniques over the corelated topic networks.
+The use of CTM does provide a way to look at the *correlation of topics* generated as well as applying network analytical techniques over the correlated topic networks.
 
 ![corelatedtopics](/images/corelatedtopics.png)
 ![communitydetection](/images/communitydetection.png)
